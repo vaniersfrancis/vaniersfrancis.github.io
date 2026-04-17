@@ -109,7 +109,7 @@ body {
 .hero-description {
   color: #cbd8d0;
   font-size: 1.05rem;
-  max-width: 600px; /* tighten this */
+  max-width: 600px;
   margin-bottom: 28px;
   line-height: 1.6;
 }
@@ -169,7 +169,8 @@ body {
 .hero-panel .panel,
 .card,
 .skill-card,
-.single-card {
+.single-card,
+.contact-card {
   background: rgba(16, 26, 20, 0.75);
   border: 1px solid rgba(121, 255, 171, 0.1);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
@@ -241,7 +242,8 @@ body {
 }
 
 .card:hover,
-.skill-card:hover {
+.skill-card:hover,
+.contact-card:hover {
   transform: translateY(-3px);
   border-color: rgba(121, 255, 171, 0.25);
   box-shadow: 0 16px 44px rgba(0, 0, 0, 0.24);
@@ -271,13 +273,6 @@ body {
   text-decoration: underline;
 }
 
-code {
-  background: rgba(121, 255, 171, 0.08);
-  padding: 2px 6px;
-  border-radius: 6px;
-  color: #c9ffd9;
-}
-
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -287,6 +282,95 @@ code {
 .skill-card {
   padding: 24px;
   transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+code {
+  background: rgba(121, 255, 171, 0.08);
+  padding: 2px 6px;
+  border-radius: 6px;
+  color: #c9ffd9;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.contact-card {
+  padding: 34px;
+  border-radius: 24px;
+}
+
+.contact-card h3 {
+  font-size: 2rem;
+  color: #f5fff8;
+  margin-bottom: 28px;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 22px 0;
+  border-top: 1px solid rgba(121, 255, 171, 0.08);
+}
+
+.contact-row:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.contact-label {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #aebdb3;
+}
+
+.contact-row a,
+.contact-value {
+  color: #f2fff6;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-row a:hover {
+  text-decoration: underline;
+}
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.profile-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 1px solid rgba(121, 255, 171, 0.14);
+  background:
+    radial-gradient(circle at 30% 30%, rgba(121, 255, 171, 0.18), transparent 35%),
+    rgba(255, 255, 255, 0.04);
+  flex-shrink: 0;
+}
+
+.profile-subtitle {
+  color: #9db0a3;
+  font-size: 1.15rem;
+  margin-top: 8px;
+}
+
+.profile-points {
+  padding-left: 22px;
+  color: #d7e1db;
+}
+
+.profile-points li + li {
+  margin-top: 18px;
 }
 
 .footer {
@@ -307,7 +391,8 @@ a {
 @media (max-width: 900px) {
   .hero-grid,
   .card-grid,
-  .skills-grid {
+  .skills-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
@@ -327,106 +412,10 @@ a {
   .hero {
     padding-top: 80px;
   }
-}
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-}
-
-.contact-card {
-  background: rgba(16, 26, 20, 0.75);
-  border: 1px solid rgba(121, 255, 171, 0.1);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
-  border-radius: 24px;
-  padding: 34px;
-}
-
-.contact-card h3 {
-  font-size: 2rem;
-  color: #f5fff8;
-  margin-bottom: 28px;
-}
-
-.contact-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  padding: 24px 0;
-  border-top: 1px solid rgba(121, 255, 171, 0.08);
-}
-
-.contact-row:first-of-type {
-  border-top: none;
-  padding-top: 0;
-}
-
-.contact-label {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #aebdb3;
-  min-width: 90px;
-}
-
-.contact-row a,
-.contact-value {
-  color: #f2fff6;
-  text-align: right;
-  word-break: break-word;
-}
-
-.contact-row a {
-  text-decoration: none;
-}
-
-.contact-row a:hover {
-  text-decoration: underline;
-}
-
-.profile-top {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  margin-bottom: 28px;
-}
-
-.profile-image {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid rgba(121, 255, 171, 0.14);
-}
-
-.profile-subtitle {
-  color: #9db0a3;
-  font-size: 1.15rem;
-  margin-top: 8px;
-}
-
-.profile-points {
-  padding-left: 22px;
-  color: #d7e1db;
-}
-
-.profile-points li + li {
-  margin-top: 18px;
-}
-
-@media (max-width: 900px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
 
   .contact-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .contact-row a,
-  .contact-value {
-    text-align: left;
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .profile-top {
