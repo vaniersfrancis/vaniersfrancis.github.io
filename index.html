@@ -4,32 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vanier Francis | Cybersecurity Portfolio</title>
-  <meta name="description" content="Cybersecurity portfolio of Vanier Francis, focused on SOC analyst skills and hands-on labs." />
+  <meta
+    name="description"
+    content="Cybersecurity portfolio of Vanier Francis, focused on SOC analyst skills, Splunk, Linux, threat detection, and hands-on investigations."
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <div class="background-glow"></div>
 
   <header class="site-header">
     <div class="container nav">
       <a href="#" class="brand">Vanier Francis</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#labs">Labs</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#labs">Labs</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
-
-    <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
-
         <div class="hero-text">
           <p class="eyebrow">Cybersecurity Portfolio</p>
 
@@ -39,7 +41,10 @@
           </h1>
 
           <p class="hero-description">
-            I am an aspiring SOC analyst focused on detecting suspicious behavior through log analysis, SIEM tools, and hands-on lab environments. My work centers on authentication attacks, privilege escalation detection, and investigation workflows using Splunk and Linux.
+            I am an aspiring SOC analyst focused on detecting suspicious behavior through
+            log analysis, SIEM tools, and hands-on lab environments. My work centers on
+            authentication attacks, privilege escalation detection, and investigation
+            workflows using Splunk and Linux.
           </p>
 
           <div class="hero-buttons">
@@ -67,11 +72,9 @@
             </ul>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container">
         <div class="section-heading">
@@ -81,15 +84,15 @@
 
         <div class="single-card">
           <p>
-            My work centers on building real hands-on cybersecurity skills through labs, investigation write-ups,
-            and detection-focused projects. I focus on identifying suspicious behavior, analyzing logs, and
-            translating technical activity into findings that reflect real SOC analyst workflows.
+            My work centers on building real hands-on cybersecurity skills through labs,
+            investigation write-ups, and detection-focused projects. I focus on identifying
+            suspicious behavior, analyzing logs, and translating technical activity into
+            findings that reflect real SOC analyst workflows.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- LABS -->
     <section id="labs" class="section section-alt">
       <div class="container">
         <div class="section-heading">
@@ -98,36 +101,36 @@
         </div>
 
         <div class="card-grid">
-
-          <div class="card">
+          <article class="card">
             <p class="card-kicker">Detection Lab</p>
             <h3>SSH Brute Force Detection</h3>
             <p>
-              Simulated repeated failed SSH login attempts and analyzed logs in Splunk to detect brute force behavior.
+              Simulated repeated failed SSH login attempts and analyzed logs in Splunk
+              to detect brute force behavior.
             </p>
-          </div>
+          </article>
 
-          <div class="card">
+          <article class="card">
             <p class="card-kicker">Investigation Lab</p>
             <h3>Linux Authentication Analysis</h3>
             <p>
-              Analyzed auth.log and system activity to identify login patterns and suspicious access behavior.
+              Analyzed auth.log and related system activity to identify login patterns
+              and suspicious access behavior.
             </p>
-          </div>
+          </article>
 
-          <div class="card">
+          <article class="card">
             <p class="card-kicker">Monitoring Lab</p>
             <h3>Privilege Escalation Visibility</h3>
             <p>
-              Tracked sudo activity and authentication failures to identify privilege escalation attempts.
+              Tracked sudo activity and authentication failures to identify possible
+              privilege escalation attempts.
             </p>
-          </div>
-
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- 🔥 INVESTIGATION SECTION -->
     <section class="section">
       <div class="container">
         <div class="section-heading">
@@ -137,122 +140,149 @@
 
         <div class="single-card">
           <p>
-            During my SSH brute force lab, I observed multiple failed authentication attempts from a single source,
-            followed by a successful login. This pattern suggests a potential brute force compromise scenario, where
-            repeated password attempts eventually led to unauthorized access.
+            During my SSH brute force lab, I observed multiple failed authentication
+            attempts from a single source, followed by a successful login. This pattern
+            suggests a potential brute force compromise scenario, where repeated password
+            attempts eventually led to unauthorized access.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="container">
         <div class="section-heading">
           <p class="section-label">Projects</p>
-          <h2>Selected work that reflects technical growth.</h2>
+          <h2>Selected work that reflects technical growth and execution.</h2>
         </div>
 
         <div class="card-grid">
-
-          <div class="card">
+          <article class="card">
+            <p class="card-kicker">Security Homelab</p>
             <h3>Homelab Security Journey</h3>
-            <p>Documenting labs, SIEM workflows, and investigation skills.</p>
-            <a href="https://github.com/vaniersfrancis/homelab-security-journey" target="_blank">View Repo</a>
-          </div>
+            <p>
+              A growing project documenting Linux labs, Splunk workflows, investigative
+              steps, and system-level security practice built to develop analyst-ready habits.
+            </p>
+            <a href="https://github.com/vaniersfrancis/homelab-security-journey" target="_blank" rel="noopener">
+              Open Repository
+            </a>
+          </article>
 
-          <div class="card">
+          <article class="card">
+            <p class="card-kicker">Study & Documentation</p>
             <h3>Security+ Notes</h3>
-            <p>Structured cybersecurity study notes and concepts.</p>
-            <a href="https://github.com/vaniersfrancis/security-plus-notes" target="_blank">View Repo</a>
-          </div>
+            <p>
+              Structured notes and cybersecurity fundamentals organized for review,
+              retention, and long-term learning.
+            </p>
+            <a href="https://github.com/vaniersfrancis/security-plus-notes" target="_blank" rel="noopener">
+              Open Repository
+            </a>
+          </article>
 
+          <article class="card">
+            <p class="card-kicker">Automation Project</p>
+            <h3>Trading Bot Build</h3>
+            <p>
+              A Node.js project demonstrating backend logic, API handling, async workflows,
+              and real-time interaction through a Telegram bot interface.
+            </p>
+            <a href="https://github.com/vaniersfrancis" target="_blank" rel="noopener">
+              View GitHub
+            </a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="section section-alt">
       <div class="container">
         <div class="section-heading">
           <p class="section-label">Skills</p>
-          <h2>Tools and technologies I use.</h2>
+          <h2>Tools, systems, and security areas I’m actively building with.</h2>
         </div>
 
         <div class="skills-grid">
           <div class="skill-card">
-            <h3>SIEM</h3>
-            <p>Splunk, dashboards, alerts</p>
+            <h3>SIEM & Detection</h3>
+            <p>Splunk, dashboards, alerts, log search, detection logic</p>
           </div>
+
           <div class="skill-card">
-            <h3>Systems</h3>
-            <p>Linux, auth.log, user management</p>
+            <h3>Linux & Systems</h3>
+            <p>Ubuntu, auth.log analysis, users, permissions, terminal workflow</p>
           </div>
+
           <div class="skill-card">
-            <h3>Security</h3>
-            <p>Threat detection, investigations</p>
+            <h3>Security Focus</h3>
+            <p>Threat detection, brute force analysis, investigations, privilege monitoring</p>
           </div>
+
           <div class="skill-card">
-            <h3>Other</h3>
-            <p>GitHub, troubleshooting</p>
+            <h3>Other Technical Skills</h3>
+            <p>GitHub, documentation, troubleshooting, technical support, Node.js</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-   <section id="contact" class="section">
-  <div class="container">
-    <div class="section-heading">
-      <p class="section-label">Contact</p>
-      <h2>Connect with me.</h2>
-    </div>
-
-    <div class="contact-grid">
-      <div class="contact-card contact-details">
-        <h3>Get in Touch</h3>
-
-        <div class="contact-row">
-          <span class="contact-label">GitHub</span>
-          <a href="https://github.com/vaniersfrancis" target="_blank" rel="noopener">github.com/vaniersfrancis</a>
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Contact</p>
+          <h2>Connect with me.</h2>
         </div>
 
-        <div class="contact-row">
-          <span class="contact-label">LinkedIn</span>
-          <a href="https://www.linkedin.com/in/vaniersfrancis/" target="_blank" rel="noopener">linkedin.com/in/vaniersfrancis</a>
-        </div>
+        <div class="contact-grid">
+          <div class="contact-card contact-details">
+            <h3>Get in Touch</h3>
 
-        <div class="contact-row">
-          <span class="contact-label">Email</span>
-          <span class="contact-value">francis.vanier@yahoo.com</span>
-        </div>
-      </div>
+            <div class="contact-row">
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/vaniersfrancis" target="_blank" rel="noopener">
+                github.com/vaniersfrancis
+              </a>
+            </div>
 
-      <div class="contact-card contact-profile">
-        <div class="profile-top">
-          <img src="images/profile.jpg" alt="Vanier Francis profile photo" class="profile-image">
-          <div>
-            <h3>Vanier Francis</h3>
-            <p class="profile-subtitle">Aspiring SOC Analyst | Detection & Investigation</p>
+            <div class="contact-row">
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/vaniersfrancis/" target="_blank" rel="noopener">
+                linkedin.com/in/vaniersfrancis
+              </a>
+            </div>
+
+            <div class="contact-row">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">francis.vanier@yahoo.com</span>
+            </div>
+          </div>
+
+          <div class="contact-card contact-profile">
+            <div class="profile-top">
+              <div class="profile-image" aria-hidden="true"></div>
+              <div>
+                <h3>Vanier Francis</h3>
+                <p class="profile-subtitle">Aspiring SOC Analyst | Detection &amp; Investigation</p>
+              </div>
+            </div>
+
+            <ul class="profile-points">
+              <li>Building hands-on SIEM and detection skills with Splunk</li>
+              <li>Investigating authentication activity and attack patterns</li>
+              <li>Working with Linux systems, auth.log, and alert workflows</li>
+              <li>Focused on practical, real-world cybersecurity growth</li>
+            </ul>
           </div>
         </div>
-
-        <ul class="profile-points">
-          <li>Building hands-on SIEM and detection skills with Splunk</li>
-          <li>Investigating authentication activity and attack patterns</li>
-          <li>Working with Linux systems, auth.log, and alert workflows</li>
-          <li>Focused on practical, real-world cybersecurity growth</li>
-        </ul>
       </div>
-    </div>
-  </div>
-</section>
-
+    </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Vanier Francis</p>
+    <div class="container">
+      <p>© 2026 Vanier Francis. Built to document growth, discipline, and hands-on cybersecurity work.</p>
+    </div>
   </footer>
-
 </body>
 </html>
