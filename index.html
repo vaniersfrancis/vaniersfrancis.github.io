@@ -196,6 +196,46 @@
       </div>
     </section>
 
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-label">Investigation Insight</p>
+      <h2>SSH Brute Force Detection Analysis</h2>
+    </div>
+
+    <div class="single-card">
+      <p>
+        During this lab, I simulated repeated SSH login attempts against a Linux system
+        to replicate brute force behavior. By analyzing authentication logs in Splunk,
+        I identified a pattern of repeated failures originating from a single host.
+      </p>
+
+      <p>
+        The data showed a spike in authentication failures within a short timeframe,
+        indicating automated or repeated login attempts. This behavior is consistent
+        with brute force attack techniques used to gain unauthorized access.
+      </p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Raw Log Evidence</h3>
+        <img src="images/ssh-bruteforce-raw-logs.png" alt="Raw SSH authentication logs">
+      </div>
+
+      <div class="card">
+        <h3>Detection Pattern</h3>
+        <img src="images/ssh-bruteforce-detection-table.png" alt="Splunk detection table showing repeated failures">
+      </div>
+
+      <div class="card">
+        <h3>Attack Timeline</h3>
+        <img src="images/ssh-bruteforce-timeline.png" alt="Splunk timeline showing attack spike">
+      </div>
+    </div>
+  </div>
+</section>
+    
     <section id="skills" class="section section-alt">
       <div class="container">
         <div class="section-heading">
